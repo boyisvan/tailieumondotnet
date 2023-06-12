@@ -1,0 +1,85 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+@{
+    if (TempData.ContainsKey("session")==true)
+    {
+        <div style="display:flex;flex-wrap:wrap;justify-content:center">
+            <a href="/ChucVu" class="cart form-control" style="margin:5px;text-decoration:none;text-align:center;width:350px;padding:0">
+                <div class="alert alert-warning">
+                    Quản lí chức vụ
+                </div>
+                <div class="card-body">
+                   <p>Tổng số chức vụ : @ViewBag.sochucvu</p>
+                </div>
+            </a>
+
+            <a href="/DanhMuc" class="cart form-control" style="margin:5px;text-decoration:none;text-align:center;width:350px;padding:0">
+                <div class="alert alert-info">
+                    Quản lí danh mục
+                </div>
+                <div class="card-body">
+                   <p>Tổng số danh mục : @ViewBag.sodanhmuc</p>
+                </div>
+            </a>
+            <a href="/HoaDon" class="cart form-control" style="margin:5px;text-decoration:none;text-align:center;width:350px;padding:0">
+                <div class="alert alert-primary">
+                    Quản lí hóa đơn
+                </div>
+                <div class="card-body">
+                   <p>Tổng số hóa đơn : @ViewBag.sohoadon</p>
+                </div>
+            </a>
+            <a href="/KhachHang" class="cart form-control" style="margin:5px;text-decoration:none;text-align:center;width:350px;padding:0">
+                <div class="alert alert-success">
+                    Quản lí khách hàng
+                </div>
+                <div class="card-body">
+                   <p>Tổng số khách hàng : @ViewBag.sokhachhang</p>
+                </div>
+            </a>
+            <a href="/ChucVu" class="cart form-control" style="margin:5px;text-decoration:none;text-align:center;width:350px;padding:0">
+                <div class="alert alert-danger">
+                    Quản lí nhân viên
+                </div>
+                <div class="card-body">
+                   <p>Tổng số nhân viên : @ViewBag.sonhanvien</p>
+                </div>
+            </a>
+            <a href="/SanPham/" class="cart form-control" style="margin:5px;text-decoration:none;text-align:center;width:350px;padding:0">
+                <div class="alert alert-dark">
+                    Quản lí sản phẩm
+                </div>
+                <div class="card-body">
+                   <p>Tổng số sản phẩm : @ViewBag.sosanpham</p>
+                </div>
+            </a>
+            <a href="/TaiKhoan" class="cart form-control" style="margin:5px;text-decoration:none;text-align:center;width:350px;padding:0">
+                <div class="alert alert-info">
+                    Quản lí tài khoản
+                </div>
+                <div class="card-body">
+                   <p>Tổng số tài khoản : @ViewBag.sotaikhoan</p>
+                </div>
+            </a>
+            <a href="/Login/DangNhap" onclick="dialog();" class="alert alert-danger form-control" style="margin:5px;text-decoration:none;text-align:center;width:350px;padding:0;display:flex;justify-content:center;align-items:center">
+                Thoát
+            </a>
+
+        </div>
+        <script>
+            function dialog() {
+                Swal.fire(
+                    'Thành công!',
+                    'Bạn đã rời khỏi hệ thống!',
+                    'success'
+                )
+            }
+        </script>
+    }
+    else
+    {
+        <p>Bạn cần phải đăng nhập</p>
+    }
+}

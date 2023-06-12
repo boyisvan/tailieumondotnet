@@ -1,0 +1,52 @@
+﻿@model IEnumerable<MobileStore.Models.ChucVu>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2 class="text-center">Danh sách chức vụ</h2>
+
+<p>
+    <a href="/ChucVu/Create/" class="btn btn-success">Thêm mới</a>
+</p>
+<table class="table table-bordered table-hover text-center " style="box-shadow:5px 10px 25px #f8fff0">
+    <tr class="alert-info">
+        <th>
+            @Html.DisplayNameFor(model => model.MaChucVu)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TenChucVu)
+        </th>
+        <th>Thao tác</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaChucVu)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenChucVu)
+            </td>
+            <td>
+                @*@Html.ActionLink("Sửa", "Edit", new { MaChucVu = item.MaChucVu }) |
+                @Html.ActionLink("Chi tiết", "Details", new { MaChucVu = item.MaChucVu }) |
+                @Html.ActionLink("Xóa", "Delete", new { MaChucVu = item.MaChucVu })*@
+                <a href="/Chucvu/Edit?MaChucVu=@item.MaChucVu" class="btn btn-primary">Sửa</a>
+                <a href="/Chucvu/Details?MaChucVu=@item.MaChucVu" class="btn btn-info">Chi tiết</a>
+                <a href="/Chucvu/Delete?MaChucVu=@item.MaChucVu" class="btn btn-danger">Xóa</a>
+                @*<a href="/SinhVien/Edit?Masinhvien=@item.MaSinhVien" class="btn btn-primary">Sửa</a>
+                <a href="/SinhVien/Details?Masinhvien=@item.MaSinhVien" class="btn btn-warning">Chi tiết</a>
+                <a href="/SinhVien/Delete?Masinhvien=@item.MaSinhVien" class="btn btn-danger">Xóa</a>*@
+            </td>
+        </tr>
+    }
+
+</table>
+
+<style>
+    th{
+        text-align:center;
+    }
+</style>

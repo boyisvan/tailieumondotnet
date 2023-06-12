@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewBag.Title = "AdminPage";
+}
+
+<div class="containerdiv" >
+    <div class="classcon">
+        <a class="alert alert-warning a" href="/Home/TrangChu">Trang chủ bán hàng</a>
+        <a class="alert alert-success a" href="/ChucVu/">Quản lí chức vụ</a>
+        <a class="alert alert-danger a" href="/DanhMuc/">Quản lí danh mục</a>
+        <a class="alert alert-info a " href="/HoaDon/">Quản lí hóa đơn</a>
+        <a class="alert alert-success a" href="/KhachHang/">Quản lí khách hàng</a>
+        <a class="alert alert-warning a" href="/NhanVien/">Quản lí nhân viên</a>
+        <a class="alert alert-info a" href="/TaiKhoan/">Quản lí tài khoản</a>
+        <a class="alert alert-danger a" href="/SanPham/">Quản lí sản phẩm</a>
+        <a class="alert alert-warning a" href="/Home">Thoát</a>
+    </div>
+</div>
+
+<style>
+    a{
+        text-decoration:none;
+    }
+    .containerdiv {
+        width:100%;
+        height:90vh;
+        display: flex;
+        justify-content: center;
+    }
+    .classcon {
+        display: flex;
+        justify-content:center;
+        flex-wrap:wrap;
+        align-items:center;
+        height: 500px;
+        width: 500px;
+    }
+    .a {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        text-align: center;
+        flex-basis: 25%;
+        margin-right:20px;
+        width: 100px;
+        height: 100px;
+        text-decoration: none;
+    }
+    .a:hover{
+        border: 2px solid white;
+        border-radius: 10px; 
+ 
+        text-decoration: none;
+    }
+</style>

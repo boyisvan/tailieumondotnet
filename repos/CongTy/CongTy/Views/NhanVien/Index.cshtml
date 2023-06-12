@@ -1,0 +1,53 @@
+﻿@model IEnumerable<CongTy.Models.NhanVien>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<p>
+    <a asp-action="Create" class="btn btn-success">Thêm mới</a>
+</p>
+<table class="table table-bordered table-hover text-center">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.HoTen)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DienThoai)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DiaChi)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MaPhongNavigation)
+            </th>
+            <th>Thao tác</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.HoTen)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DienThoai)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DiaChi)
+            </td>
+            <td>
+                @*@Html.DisplayFor(modelItem => item.MaPhongNavigation.MaPhong)*@
+
+                @Html.DisplayFor(modelItem => item.MaPhong)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.MaNv" class="btn btn-primary">Edit</a>
+                <a asp-action="Details" asp-route-id="@item.MaNv" class="btn btn-warning">Details</a>
+                <a asp-action="Delete" asp-route-id="@item.MaNv" class="btn btn-danger">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

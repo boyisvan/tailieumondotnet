@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Vũ Trụ Điện Thoại.props" />
+</Project>

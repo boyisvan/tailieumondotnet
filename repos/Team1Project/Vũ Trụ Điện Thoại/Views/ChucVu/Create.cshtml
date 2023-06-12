@@ -1,0 +1,34 @@
+﻿@model Vũ_Trụ_Điện_Thoại.Models.ChucVu
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h4>Thêm mới chức vụ</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="MaChucVu" class="control-label"></label>
+                <input asp-for="MaChucVu" class="form-control" />
+                <span asp-validation-for="MaChucVu" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TenChucVu" class="control-label"></label>
+                <input asp-for="TenChucVu" class="form-control" />
+                <span asp-validation-for="TenChucVu" class="text-danger"></span>
+                <br />
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-8" style="display:flex;justify-content:space-between">
+                    <input type="submit" value="Thêm mới" class="btn btn-success" />
+                    <a href="/ChucVu/Index" class="btn btn-outline-primary">Quay lại</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+

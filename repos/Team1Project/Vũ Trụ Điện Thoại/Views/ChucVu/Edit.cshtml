@@ -1,0 +1,28 @@
+﻿@model Vũ_Trụ_Điện_Thoại.Models.ChucVu
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+
+<h4>Sửa chức vụ</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="MaChucVu" />
+            <span asp-validation-for="MaChucVu" class="text-danger">không thể sửa mã chức vụ!!</span>
+            <div class="form-group">
+                <label asp-for="TenChucVu" class="control-label"></label>
+                <input asp-for="TenChucVu" class="form-control" />
+                <span asp-validation-for="TenChucVu" class="text-danger"></span>
+                <br />
+            </div>
+            <div class="col-md-offset-2 col-md-8" style="display:flex;justify-content:space-between">
+                <input type="submit" value="Save" class="btn btn-primary" />
+                <a asp-action="Index" class="btn btn-outline-primary">Quay lại</a>
+            </div>
+        </form>
+    </div>
+</div>

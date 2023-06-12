@@ -1,0 +1,32 @@
+﻿@model Vũ_Trụ_Điện_Thoại.Models.DanhMuc
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+<div class="form-horizontal form-control" style="width:400px;height:220px;margin:0 auto">
+    <h4>Chi tiết danh mục</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-5">
+            Mã danh mục :
+        </dt>
+        <dd class = "col-sm-7">
+            @Html.DisplayFor(model => model.MaDanhMuc)
+        </dd>
+        <dt class = "col-sm-5">
+            Tên danh mục :
+        </dt>
+        <dd class = "col-sm-7">
+            @Html.DisplayFor(model => model.TenDanhMuc)
+        </dd>
+    </dl>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-8" style="display:flex;justify-content:space-between">
+            <a href="/DanhMuc/Edit?MaDanhMuc=@Model.MaDanhMuc" class="btn btn-success">Sửa thông tin</a>
+            <a href="/DanhMuc/Index" class="btn btn-outline-primary">Quay lại</a>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,41 @@
+﻿@model VieTorism.Models.Danhmuc
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layoutadmin.cshtml";
+}
+<nav class="d-flex justify-content-center">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/TrangChu/">Trang chủ</a></li>
+        <li class="breadcrumb-item"><a href="#">Danh mục</a></li>
+        <li class="breadcrumb-item active">Chỉnh sửa danh mục</li>
+    </ol>
+</nav>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Madanhmuc" />
+            <label class="control-label">Mã danh mục : @ViewBag.madanhmuc</label>
+            <div class="form-group">
+                <label asp-for="Tendanhmuc" class="control-label">Tên danh mục</label>
+                <input asp-for="Tendanhmuc" class="form-control" />
+                <span asp-validation-for="Tendanhmuc" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Trangthai" class="control-label">Trạng thái</label>
+                <input asp-for="Trangthai" class="form-control" />
+                <span asp-validation-for="Trangthai" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-8" style="display:flex;justify-content:space-between">
+                    <input type="submit" value="Lưu lại" class="btn btn-success" />
+                    <a href="/DanhMuc/Index" class="btn btn-outline-primary">Quay lại</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+

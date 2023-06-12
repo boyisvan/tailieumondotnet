@@ -1,0 +1,58 @@
+﻿@model IEnumerable<VTDT.Models.TaiKhoan>
+
+@{
+    ViewBag.Title = "DanhSachTaiKhoan";
+}
+
+<h2 class="text-center">Danh sách tài khoản</h2>
+
+<p>
+    @Html.ActionLink("Thêm mới", "ThemMoiTaiKhoan", new {@class="btn btn success"})
+</p>
+<table class="table table-bordered table-hover text-center " style="box-shadow:5px 10px 25px #f8fff0">
+    <tr style="background-color:antiquewhite">
+        <th>
+            @Html.DisplayNameFor(model => model.MaNguoiDung)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TenTaiKhoan)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MatKhau)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LoaiTaiKhoan)
+        </th>
+        <th>Thao tác</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaNguoiDung)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenTaiKhoan)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MatKhau)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LoaiTaiKhoan)
+            </td>
+            <td>
+                @Html.ActionLink("Sửa", "SuaTaiKhoan", new { MaNguoiDung = item.MaNguoiDung }) |
+                @Html.ActionLink("Chi tiết", "Details", new { MaNguoiDung = item.MaNguoiDung }) |
+                @Html.ActionLink("Xóa", "XoaTaiKhoan", new { MaNguoiDung = item.MaNguoiDung })
+            </td>
+        </tr>
+    }
+
+</table>
+
+<style>
+    th{
+        text-align:center;
+    }
+</style>

@@ -1,0 +1,57 @@
+﻿@model IEnumerable<HoangDucVan_DeSo1.Models.Member>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<p>
+    <a asp-action="Create" class="btn btn-success">Thêm mới</a>
+</p>
+<table class="table table-bordered table-hover text-center " style="box-shadow:5px 10px 25px #f8fff0">
+
+    <thead>
+        <tr>
+            <th>
+                MemberID
+            </th>
+            <th>
+                UserName
+            </th>
+            <th>
+                Password
+            </th>
+            <th>
+               Age
+            </th>
+            <th>
+                Email
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MemberId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Password)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Age)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            @*<td>
+                    <a href="/Member/Edit?Masinhvien=@item.MemberId" class="btn btn-primary">Sửa</a>
+                    <a href="/Member/Details?Masinhvien=@item.MemberId" class="btn btn-warning">Chi tiết</a>
+                    <a href="/Member/Delete?Masinhvien=@item.MemberId" class="btn btn-danger">Xóa</a>
+            </td>*@
+        </tr>
+}
+    </tbody>
+</table>

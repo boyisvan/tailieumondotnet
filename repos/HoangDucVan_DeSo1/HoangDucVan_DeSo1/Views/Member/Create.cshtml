@@ -1,0 +1,51 @@
+﻿@model HoangDucVan_DeSo1.Models.Member
+
+@{
+    ViewData["Title"] = "Create";
+}
+<h4 class="text-center">Add Member</h4>
+<div class="form-horizontal form-control" style="width:500px;height:430px;margin:0 auto">
+    <div class="col-md-12">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="MemberId" class="control-label"></label>
+                <input asp-for="MemberId" class="form-control" />
+                <span asp-validation-for="MemberId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="UserName" class="control-label"></label>
+                <input asp-for="UserName" class="form-control" />
+                <span asp-validation-for="UserName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password" class="control-label"></label>
+                <input asp-for="Password" type="password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Age" class="control-label"></label>
+                <input asp-for="Age" class="form-control" />
+                <span asp-validation-for="Age" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+                <br /><br />
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-8" style="display:flex;justify-content:space-between">
+                    <input type="submit" value="Lưu lại" class="btn btn-success" />
+                    <a href="/Member/Index" class="btn btn-outline-primary">Quay lại</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

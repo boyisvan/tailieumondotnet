@@ -1,0 +1,40 @@
+D:\Workspace\Donet nang cao\DemoProject\eShopOnWeb.Service\bin\Debug\net5.0\eShopOnWeb.Service.deps.json
+D:\Workspace\Donet nang cao\DemoProject\eShopOnWeb.Service\bin\Debug\net5.0\eShopOnWeb.Service.dll
+D:\Workspace\Donet nang cao\DemoProject\eShopOnWeb.Service\bin\Debug\net5.0\ref\eShopOnWeb.Service.dll
+D:\Workspace\Donet nang cao\DemoProject\eShopOnWeb.Service\bin\Debug\net5.0\eShopOnWeb.Service.pdb
+D:\Workspace\Donet nang cao\DemoProject\eShopOnWeb.Service\obj\Debug\net5.0\eShopOnWeb.Service.csproj.AssemblyReference.cache
+D:\Workspace\Donet nang cao\DemoProject\eShopOnWeb.Service\obj\Debug\net5.0\eShopOnWeb.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\Workspace\Donet nang cao\DemoProject\eShopOnWeb.Service\obj\Debug\net5.0\eShopOnWeb.Service.AssemblyInfoInputs.cache
+D:\Workspace\Donet nang cao\DemoProject\eShopOnWeb.Service\obj\Debug\net5.0\eShopOnWeb.Service.AssemblyInfo.cs
+D:\Workspace\Donet nang cao\DemoProject\eShopOnWeb.Service\obj\Debug\net5.0\eShopOnWeb.Service.csproj.CoreCompileInputs.cache
+D:\Workspace\Donet nang cao\DemoProject\eShopOnWeb.Service\obj\Debug\net5.0\eShopOnWeb.Service.dll
+D:\Workspace\Donet nang cao\DemoProject\eShopOnWeb.Service\obj\Debug\net5.0\ref\eShopOnWeb.Service.dll
+D:\Workspace\Donet nang cao\DemoProject\eShopOnWeb.Service\obj\Debug\net5.0\eShopOnWeb.Service.pdb
+D:\Workspace\Donet nang cao\DemoProject\eShopOnWeb.Service\bin\Debug\net5.0\eShopOnWeb.Service.runtimeconfig.json
+D:\Workspace\Donet nang cao\DemoProject\eShopOnWeb.Service\bin\Debug\net5.0\eShopOnWeb.Service.runtimeconfig.dev.json
+D:\Workspace\Donet nang cao\DemoProject\eShopOnWeb.Service\bin\Debug\net5.0\eShopOnWeb.Model.dll
+D:\Workspace\Donet nang cao\DemoProject\eShopOnWeb.Service\bin\Debug\net5.0\eShopOnWeb.Repository.dll
+D:\Workspace\Donet nang cao\DemoProject\eShopOnWeb.Service\bin\Debug\net5.0\eShopOnWeb.Model.pdb
+D:\Workspace\Donet nang cao\DemoProject\eShopOnWeb.Service\bin\Debug\net5.0\eShopOnWeb.Repository.pdb
+D:\Workspace\Donet nang cao\DemoProject\eShopOnWeb.Service\obj\Debug\net5.0\eShopOnWeb.Service.csproj.CopyComplete
+D:\Workspace\Donet nang cao\DemoProject\eShopOnWeb.Service\obj\Debug\net5.0\eShopOnWeb.Service.genruntimeconfig.cache
+C:\Users\admin\source\repos\eShopOnline\eShopOnWeb.Service\bin\Debug\net5.0\eShopOnWeb.Service.deps.json
+C:\Users\admin\source\repos\eShopOnline\eShopOnWeb.Service\bin\Debug\net5.0\eShopOnWeb.Service.runtimeconfig.json
+C:\Users\admin\source\repos\eShopOnline\eShopOnWeb.Service\bin\Debug\net5.0\eShopOnWeb.Service.runtimeconfig.dev.json
+C:\Users\admin\source\repos\eShopOnline\eShopOnWeb.Service\bin\Debug\net5.0\eShopOnWeb.Service.dll
+C:\Users\admin\source\repos\eShopOnline\eShopOnWeb.Service\bin\Debug\net5.0\eShopOnWeb.Service.pdb
+C:\Users\admin\source\repos\eShopOnline\eShopOnWeb.Service\bin\Debug\net5.0\eShopOnWeb.Model.dll
+C:\Users\admin\source\repos\eShopOnline\eShopOnWeb.Service\bin\Debug\net5.0\eShopOnWeb.Repository.dll
+C:\Users\admin\source\repos\eShopOnline\eShopOnWeb.Service\bin\Debug\net5.0\eShopOnWeb.Model.pdb
+C:\Users\admin\source\repos\eShopOnline\eShopOnWeb.Service\bin\Debug\net5.0\eShopOnWeb.Repository.pdb
+C:\Users\admin\source\repos\eShopOnline\eShopOnWeb.Service\obj\Debug\net5.0\eShopOnWeb.Service.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\eShopOnline\eShopOnWeb.Service\obj\Debug\net5.0\eShopOnWeb.Service.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\source\repos\eShopOnline\eShopOnWeb.Service\obj\Debug\net5.0\eShopOnWeb.Service.AssemblyInfoInputs.cache
+C:\Users\admin\source\repos\eShopOnline\eShopOnWeb.Service\obj\Debug\net5.0\eShopOnWeb.Service.AssemblyInfo.cs
+C:\Users\admin\source\repos\eShopOnline\eShopOnWeb.Service\obj\Debug\net5.0\eShopOnWeb.Service.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\eShopOnline\eShopOnWeb.Service\obj\Debug\net5.0\eShopOnWeb.Service.csproj.CopyComplete
+C:\Users\admin\source\repos\eShopOnline\eShopOnWeb.Service\obj\Debug\net5.0\eShopOnWeb.Service.dll
+C:\Users\admin\source\repos\eShopOnline\eShopOnWeb.Service\obj\Debug\net5.0\refint\eShopOnWeb.Service.dll
+C:\Users\admin\source\repos\eShopOnline\eShopOnWeb.Service\obj\Debug\net5.0\eShopOnWeb.Service.pdb
+C:\Users\admin\source\repos\eShopOnline\eShopOnWeb.Service\obj\Debug\net5.0\eShopOnWeb.Service.genruntimeconfig.cache
+C:\Users\admin\source\repos\eShopOnline\eShopOnWeb.Service\obj\Debug\net5.0\ref\eShopOnWeb.Service.dll

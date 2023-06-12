@@ -1,0 +1,63 @@
+﻿@model Vũ_Trụ_Điện_Thoại.Models.KhachHang
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="form-horizontal form-control" style="width:500px;height:400px;margin:0 auto">
+    <h4 class="text-center">Chi tiết khách hàng</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-4">
+            Tên khách hàng
+        </dt>
+        <dd class = "col-sm-7">
+            @Html.DisplayFor(model => model.TenKhachHang)
+        </dd>
+        <dt class="col-sm-4">
+            Tuổi
+        </dt>
+        <dd class="col-sm-7">
+            @Html.DisplayFor(model => model.Tuoi)
+        </dd>
+        <dt class="col-sm-4">
+           Số điện thoại
+        </dt>
+        <dd class="col-sm-7">
+            @Html.DisplayFor(model => model.SoDienThoai)
+        </dd>
+        <dt class="col-sm-4">
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd class="col-sm-7">
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt class = "col-sm-4">
+            Địa chỉ
+        </dt>
+        <dd class="col-sm-7">
+            @Html.DisplayFor(model => model.DiaChi)
+        </dd>
+        <dt class="col-sm-4">
+            Giới tính
+        </dt>
+        <dd class="col-sm-7">
+            @Html.DisplayFor(model => model.GioiTinh)
+        </dd>
+        <dt class="col-sm-4">
+            Mã người dùng
+        </dt>
+        <dd class="col-sm-7">
+            @Html.DisplayFor(model => model.MaNguoiDung)
+            <br />
+            <br />
+        </dd>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-8" style="display:flex;justify-content:space-between">
+                <input type="submit" value="Lưu lại" class="btn btn-success" />
+                <a href="/Khachhang/Index" class="btn btn-outline-primary">Quay lại</a>
+            </div>
+        </div>
+    </dl>
+</div>
+

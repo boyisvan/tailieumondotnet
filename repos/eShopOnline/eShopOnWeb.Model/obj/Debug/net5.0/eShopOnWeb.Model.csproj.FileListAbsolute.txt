@@ -1,0 +1,30 @@
+D:\Workspace\Donet nang cao\DemoProject\eShopOnWeb.Model\bin\Debug\net5.0\eShopOnWeb.Model.deps.json
+D:\Workspace\Donet nang cao\DemoProject\eShopOnWeb.Model\bin\Debug\net5.0\eShopOnWeb.Model.runtimeconfig.json
+D:\Workspace\Donet nang cao\DemoProject\eShopOnWeb.Model\bin\Debug\net5.0\eShopOnWeb.Model.runtimeconfig.dev.json
+D:\Workspace\Donet nang cao\DemoProject\eShopOnWeb.Model\bin\Debug\net5.0\eShopOnWeb.Model.dll
+D:\Workspace\Donet nang cao\DemoProject\eShopOnWeb.Model\bin\Debug\net5.0\ref\eShopOnWeb.Model.dll
+D:\Workspace\Donet nang cao\DemoProject\eShopOnWeb.Model\bin\Debug\net5.0\eShopOnWeb.Model.pdb
+D:\Workspace\Donet nang cao\DemoProject\eShopOnWeb.Model\obj\Debug\net5.0\eShopOnWeb.Model.csproj.AssemblyReference.cache
+D:\Workspace\Donet nang cao\DemoProject\eShopOnWeb.Model\obj\Debug\net5.0\eShopOnWeb.Model.GeneratedMSBuildEditorConfig.editorconfig
+D:\Workspace\Donet nang cao\DemoProject\eShopOnWeb.Model\obj\Debug\net5.0\eShopOnWeb.Model.AssemblyInfoInputs.cache
+D:\Workspace\Donet nang cao\DemoProject\eShopOnWeb.Model\obj\Debug\net5.0\eShopOnWeb.Model.AssemblyInfo.cs
+D:\Workspace\Donet nang cao\DemoProject\eShopOnWeb.Model\obj\Debug\net5.0\eShopOnWeb.Model.csproj.CoreCompileInputs.cache
+D:\Workspace\Donet nang cao\DemoProject\eShopOnWeb.Model\obj\Debug\net5.0\eShopOnWeb.Model.dll
+D:\Workspace\Donet nang cao\DemoProject\eShopOnWeb.Model\obj\Debug\net5.0\ref\eShopOnWeb.Model.dll
+D:\Workspace\Donet nang cao\DemoProject\eShopOnWeb.Model\obj\Debug\net5.0\eShopOnWeb.Model.pdb
+D:\Workspace\Donet nang cao\DemoProject\eShopOnWeb.Model\obj\Debug\net5.0\eShopOnWeb.Model.genruntimeconfig.cache
+C:\Users\admin\source\repos\eShopOnline\eShopOnWeb.Model\bin\Debug\net5.0\eShopOnWeb.Model.deps.json
+C:\Users\admin\source\repos\eShopOnline\eShopOnWeb.Model\bin\Debug\net5.0\eShopOnWeb.Model.runtimeconfig.json
+C:\Users\admin\source\repos\eShopOnline\eShopOnWeb.Model\bin\Debug\net5.0\eShopOnWeb.Model.runtimeconfig.dev.json
+C:\Users\admin\source\repos\eShopOnline\eShopOnWeb.Model\bin\Debug\net5.0\eShopOnWeb.Model.dll
+C:\Users\admin\source\repos\eShopOnline\eShopOnWeb.Model\bin\Debug\net5.0\eShopOnWeb.Model.pdb
+C:\Users\admin\source\repos\eShopOnline\eShopOnWeb.Model\obj\Debug\net5.0\eShopOnWeb.Model.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\eShopOnline\eShopOnWeb.Model\obj\Debug\net5.0\eShopOnWeb.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\source\repos\eShopOnline\eShopOnWeb.Model\obj\Debug\net5.0\eShopOnWeb.Model.AssemblyInfoInputs.cache
+C:\Users\admin\source\repos\eShopOnline\eShopOnWeb.Model\obj\Debug\net5.0\eShopOnWeb.Model.AssemblyInfo.cs
+C:\Users\admin\source\repos\eShopOnline\eShopOnWeb.Model\obj\Debug\net5.0\eShopOnWeb.Model.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\eShopOnline\eShopOnWeb.Model\obj\Debug\net5.0\eShopOnWeb.Model.dll
+C:\Users\admin\source\repos\eShopOnline\eShopOnWeb.Model\obj\Debug\net5.0\refint\eShopOnWeb.Model.dll
+C:\Users\admin\source\repos\eShopOnline\eShopOnWeb.Model\obj\Debug\net5.0\eShopOnWeb.Model.pdb
+C:\Users\admin\source\repos\eShopOnline\eShopOnWeb.Model\obj\Debug\net5.0\eShopOnWeb.Model.genruntimeconfig.cache
+C:\Users\admin\source\repos\eShopOnline\eShopOnWeb.Model\obj\Debug\net5.0\ref\eShopOnWeb.Model.dll

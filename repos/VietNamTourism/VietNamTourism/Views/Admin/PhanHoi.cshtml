@@ -1,0 +1,61 @@
+﻿@model IEnumerable<VietNamTourism.Models.Phanhoi>
+
+@{
+    ViewData["Title"] = "PhanHoi";
+}
+
+<div class="pagetitle">
+      <h1>Feedback</h1>
+     <nav>
+          <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Admin</a></li>
+                <li class="breadcrumb-item active">phản hồi</li>
+           </ol>
+     </nav>
+</div>
+
+<p>
+    <a href="/Admin/ThemPhanHoi" class="btn btn-success">Thêm mới</a>
+</p>
+<table class="table table-bordered table-hover text-center " style="box-shadow:5px 10px 25px #f8fff0">
+    <thead >
+        <tr class="alert alert-secondary alert-dismissible fade show" role="alert">
+            <th>
+               Mã phản hồi
+            </th>
+            <th>
+                Mã người dùng 
+            </th>
+            <th>
+                Nội dung
+            </th>
+            <th>
+                Trạng thái 
+            </th>
+            <th>Thao tác</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Maphanhoi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Manguoidung)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Noidung)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Trangthaiphanhoi)
+            </td>
+            <td>
+                    <a href="/SinhVien/Edit?Maphanhoin=@item.Maphanhoi" class="btn btn-primary">Sửa</a>
+                    <a href="/SinhVien/Details?Maphanhoi=@item.Maphanhoi" class="btn btn-warning">Chi tiết</a>
+                    <a href="/SinhVien/Delete?Maphanhoi=@item.Maphanhoi" class="btn btn-danger">Xóa</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

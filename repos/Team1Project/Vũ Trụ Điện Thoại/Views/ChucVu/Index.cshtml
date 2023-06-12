@@ -1,0 +1,41 @@
+﻿@model IEnumerable<Vũ_Trụ_Điện_Thoại.Models.ChucVu>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+<p>
+    <a asp-action="Create" class="btn btn-success">Thêm mới</a>
+</p>
+<table class="table table-bordered table-hover text-center " style="box-shadow:5px 10px 25px #f8fff0">
+    <thead>
+        <tr class="alert alert-primary">
+            <th>
+                Mã chức vụ
+            </th>
+            <th>
+                Tên chức vụ
+            </th>
+            <th>Thao tác</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaChucVu)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenChucVu)
+            </td>
+            <td>
+                    <a href="/ChucVu/Edit?MaChucVu=@item.MaChucVu" class="btn btn-primary">Sửa</a>
+                    <a href="/ChucVu/Details?MaChucVu=@item.MaChucVu" class="btn btn-warning">Chi tiết</a>
+                    <a href="/ChucVu/Delete?MaChucVu=@item.MaChucVu" class="btn btn-danger">Xóa</a>
+
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

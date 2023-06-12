@@ -1,0 +1,69 @@
+﻿@model IEnumerable<MobileStore.Models.NhanVien>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2 class="text-center">Danh sách nhân viên</h2>
+
+<p>
+    <a href="/NhanVien/Create" class="btn btn-success">Thêm mới</a>
+</p>
+<table class="table table-bordered table-hover text-center " style="box-shadow:5px 10px 25px #f8fff0">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.HoTen)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DiaChi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SoDienThoai)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ChucVu.TenChucVu)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TaiKhoan.TenTaiKhoan)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.HoTen)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DiaChi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoDienThoai)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ChucVu.TenChucVu)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TaiKhoan.TenTaiKhoan)
+            </td>
+            <td>
+                <a href="/NhanVien/Edit?Masinhvien=@item.MaNhanVien" class="btn btn-primary">Sửa</a>
+                <a href="/NhanVien/Details?Masinhvien=@item.MaNhanVien" class="btn btn-warning">Chi tiết</a>
+                <a href="/NhanVien/Delete?Masinhvien=@item.MaNhanVien" class="btn btn-danger">Xóa</a>
+            </td>
+        </tr>
+    }
+
+</table>
+<style>
+    th {
+        text-align: center;
+    }
+</style>

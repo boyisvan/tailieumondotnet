@@ -1,0 +1,55 @@
+﻿@model List<quanlisinhvien.Models.sinhvien>
+
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Danh sách sinh viên</h2>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Mã sinh viên</th>
+            <th>Họ tên</th>
+            <th>Địa chỉ</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.MaSv</td>
+                <td>@item.HoTen</td>
+                <td>@item.DiaChi</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h2>Thêm mới sinh viên</h2>
+<form action="SVController.cs" class="form-control" method="post">
+  <div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text">1.</span>
+    </div>
+        <input type="text" name="MaSv" class="col-md-3 form-control" placeholder="Nhập mã sinh viên">
+  </div>
+
+  <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text">2.</span>
+        </div>
+        <input type="text" name="HoTen" class="col-md-3 form-control" placeholder="Nhập họ tên ">
+       
+  </div>
+  <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text">3.</span>
+        </div>
+        <input type="text" name="DiaChi" class="col-md-3 form-control" placeholder="Nhập địa chỉ ">
+    @*<input type="text" class="form-control col-md-2" placeholder="Nhập địa chỉ ">*@
+
+  </div>
+    <button type="submit" class="btn btn-success btn-primary">Thêm mới</button>
+</form> 

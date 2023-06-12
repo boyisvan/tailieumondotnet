@@ -1,0 +1,7 @@
+C:\Users\admin\source\repos\Lession6\HocLinQ\bin\Debug\HocLinQ.exe.config
+C:\Users\admin\source\repos\Lession6\HocLinQ\bin\Debug\HocLinQ.exe
+C:\Users\admin\source\repos\Lession6\HocLinQ\bin\Debug\HocLinQ.pdb
+C:\Users\admin\source\repos\Lession6\HocLinQ\obj\Debug\HocLinQ.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\Lession6\HocLinQ\obj\Debug\HocLinQ.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\Lession6\HocLinQ\obj\Debug\HocLinQ.exe
+C:\Users\admin\source\repos\Lession6\HocLinQ\obj\Debug\HocLinQ.pdb

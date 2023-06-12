@@ -1,0 +1,75 @@
+﻿@model IEnumerable<Vũ_Trụ_Điện_Thoại.Models.KhachHang>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+    <a asp-action="Create" class="btn btn-outline-success">Thêm mới</a>
+</p>
+<table class="table table-bordered table-hover text-center " style="box-shadow:5px 10px 25px #f8fff0">
+    <thead>
+        <tr class="alert alert-info">
+            <th>
+                Mã khách hàng
+            </th>
+            <th>
+                Tên khách hàng
+            </th>
+            <th>
+                Tuổi
+            </th>
+            <th>
+                Số điện thoại
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                Địa chỉ
+            </th>
+            <th>
+                Giới tính
+            </th>
+            <th>
+                Mã người dùng
+            </th>
+            <th>Thao tác</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaKhachHang)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenKhachHang)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tuoi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoDienThoai)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DiaChi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GioiTinh)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaNguoiDung)
+            </td>
+            <td>
+                    <a href="/KhachHang/Edit?MaKhachHang=@item.MaKhachHang" class="btn btn-primary">Sửa</a>
+                    <a href="/KhachHang/Details?MaKhachHang=@item.MaKhachHang" class="btn btn-warning">Chi tiết</a>
+                    <a href="/KhachHang/Delete?MaKhachHang=@item.MaKhachHang" class="btn btn-danger">Xóa</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

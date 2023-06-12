@@ -1,0 +1,32 @@
+﻿@model Vũ_Trụ_Điện_Thoại.Models.ChucVu
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<table class="table table-bordered table-hover text-center " style="box-shadow:5px 10px 25px #f8fff0">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.MaChucVu)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TenChucVu)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+            <tr>
+                <td>
+                    @Html.DisplayFor(model => model.MaChucVu)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.TenChucVu)
+                </td>
+            </tr>
+    </tbody>
+</table>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.MaChucVu">Sửa</a> |
+    <a asp-action="Index">Quay lại</a>
+</div>

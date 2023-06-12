@@ -1,0 +1,90 @@
+﻿
+@{
+    ViewData["Title"] = "TrangChu";
+    Layout = "~/Views/Shared/_Layoutadmin.cshtml";
+}
+@*
+kiểm kê số lượng*@
+<div class="row">
+    <div class="col-lg-3 col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col-8">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                        <p class="font-16 m-b-5">Tổng số người dùng</p>
+                    </div>
+                    <div class="col-4">
+                        <h1 class="font-light text-right mb-0">@ViewBag.sotaikhoan</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col-7">
+                        <i class="fa-regular fa-envelope"></i>
+                        <p class="font-16 m-b-5">Danh mục hỗ trợ</p>
+                    </div>
+                    <div class="col-5">
+                        <h1 class="font-light text-right mb-0">@ViewBag.sodanhmuc</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col-7">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <p class="font-16 m-b-5">Sản phẩm hiện có</p>
+                    </div>
+                    <div class="col-5">
+                        <h1 class="font-light text-right mb-0">@ViewBag.sosanpham</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-3 col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <div class="row align-items-center">
+                    <div class="col-7">
+                        <i class="fa-solid fa-money-bill"></i>
+                        <p class="font-16 m-b-5">New Sales</p>
+                    </div>
+                    <div class="col-5">
+                        <h1 class="font-light text-right mb-0">12.7</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <div class="card-body">
+        <div class="d-flex align-items-center">
+            <div>
+                <h4 class="card-title">Sales Ratio</h4>
+            </div>
+            <div class="ml-auto">
+                <div class="dl m-b-10">
+                    <select class="custom-select border-0 text-muted">
+                        <option value="0" selected=""></option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="sales-ratio ct-charts m-t-30"><div class="chartist-tooltip" style="top: 86px; left: 511px;"></div><svg xmlns:ct="http://gionkunz.github.com/chartist-js/ct" width="100%" height="100%" class="ct-chart-line" style="width: 100%; height: 100%;"><g class="ct-grids"><line x1="30" x2="30" y1="15" y2="177" class="ct-grid ct-horizontal"></line><line x1="76.31428745814732" x2="76.31428745814732" y1="15" y2="177" class="ct-grid ct-horizontal"></line><line x1="122.62857491629464" x2="122.62857491629464" y1="15" y2="177" class="ct-grid ct-horizontal"></line><line x1="168.94286237444197" x2="168.94286237444197" y1="15" y2="177" class="ct-grid ct-horizontal"></line><line x1="215.25714983258928" x2="215.25714983258928" y1="15" y2="177" class="ct-grid ct-horizontal"></line><line x1="261.5714372907366" x2="261.5714372907366" y1="15" y2="177" class="ct-grid ct-horizontal"></line><line x1="307.88572474888394" x2="307.88572474888394" y1="15" y2="177" class="ct-grid ct-horizontal"></line><line x1="354.20001220703125" x2="354.20001220703125" y1="15" y2="177" class="ct-grid ct-horizontal"></line><line y1="177" y2="177" x1="30" x2="354.20001220703125" class="ct-grid ct-vertical"></line><line y1="112.2" y2="112.2" x1="30" x2="354.20001220703125" class="ct-grid ct-vertical"></line><line y1="47.400000000000006" y2="47.400000000000006" x1="30" x2="354.20001220703125" class="ct-grid ct-vertical"></line></g><g><g class="ct-series ct-series-a"><path d="M30,177L30,136.5C45.438,124.836,60.876,113.487,76.314,101.508C91.752,89.529,107.19,64.572,122.629,64.572C138.067,64.572,153.505,77.511,168.943,84.66C184.381,91.809,199.819,107.664,215.257,107.664C230.695,107.664,246.133,89.814,261.571,77.856C277.01,65.898,292.448,32.82,307.886,32.82C323.324,32.82,338.762,55.5,354.2,66.84L354.2,177Z" class="ct-area" x1="NaN"></path><path d="M30,136.5C45.438,124.836,60.876,113.487,76.314,101.508C91.752,89.529,107.19,64.572,122.629,64.572C138.067,64.572,153.505,77.511,168.943,84.66C184.381,91.809,199.819,107.664,215.257,107.664C230.695,107.664,246.133,89.814,261.571,77.856C277.01,65.898,292.448,32.82,307.886,32.82C323.324,32.82,338.762,55.5,354.2,66.84" class="ct-line"></path><line x1="30" y1="136.5" x2="30.01" y2="136.5" class="ct-point" ct:value="12.5"></line><line x1="76.31428745814732" y1="101.508" x2="76.32428745814732" y2="101.508" class="ct-point" ct:value="23.3"></line><line x1="122.62857491629464" y1="64.57199999999999" x2="122.63857491629464" y2="64.57199999999999" class="ct-point" ct:value="34.7"></line><line x1="168.94286237444197" y1="84.66" x2="168.95286237444196" y2="84.66" class="ct-point" ct:value="28.5"></line><line x1="215.25714983258928" y1="107.664" x2="215.26714983258927" y2="107.664" class="ct-point" ct:value="21.4"></line><line x1="261.5714372907366" y1="77.85600000000001" x2="261.5814372907366" y2="77.85600000000001" class="ct-point" ct:value="30.6"></line><line x1="307.88572474888394" y1="32.81999999999999" x2="307.89572474888394" y2="32.81999999999999" class="ct-point" ct:value="44.5"></line><line x1="354.20001220703125" y1="66.84" x2="354.21001220703124" y2="66.84" class="ct-point" ct:value="34"></line></g></g><g class="ct-labels"><foreignObject style="overflow: visible;" x="30" y="182" width="46.31428745814732" height="20"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 46px; height: 20px;">1</span></foreignObject><foreignObject style="overflow: visible;" x="76.31428745814732" y="182" width="46.31428745814732" height="20"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 46px; height: 20px;">2</span></foreignObject><foreignObject style="overflow: visible;" x="122.62857491629464" y="182" width="46.314287458147334" height="20"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 46px; height: 20px;">3</span></foreignObject><foreignObject style="overflow: visible;" x="168.94286237444197" y="182" width="46.314287458147305" height="20"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 46px; height: 20px;">4</span></foreignObject><foreignObject style="overflow: visible;" x="215.25714983258928" y="182" width="46.314287458147305" height="20"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 46px; height: 20px;">5</span></foreignObject><foreignObject style="overflow: visible;" x="261.5714372907366" y="182" width="46.31428745814736" height="20"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 46px; height: 20px;">6</span></foreignObject><foreignObject style="overflow: visible;" x="307.88572474888394" y="182" width="46.314287458147305" height="20"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 46px; height: 20px;">7</span></foreignObject><foreignObject style="overflow: visible;" x="354.20001220703125" y="182" width="30" height="20"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/" style="width: 30px; height: 20px;">8</span></foreignObject><foreignObject style="overflow: visible;" y="112.2" x="10" height="64.8" width="10"><span class="ct-label ct-vertical ct-start" xmlns="http://www.w3.org/2000/xmlns/" style="height: 65px; width: 10px;">0k</span></foreignObject><foreignObject style="overflow: visible;" y="47.400000000000006" x="10" height="64.8" width="10"><span class="ct-label ct-vertical ct-start" xmlns="http://www.w3.org/2000/xmlns/" style="height: 65px; width: 10px;">2k</span></foreignObject><foreignObject style="overflow: visible;" y="15" x="10" height="32.400000000000006" width="10"><span class="ct-label ct-vertical ct-start" xmlns="http://www.w3.org/2000/xmlns/" style="height: 32px; width: 10px;">4k</span></foreignObject></g><defs><linearGradient id="gradient" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="rgba(255, 255, 255, 1)"></stop><stop offset="1" stop-color="rgba(64, 196, 255, 1)"></stop></linearGradient></defs></svg></div>
+    </div>
+</div>f

@@ -1,0 +1,7 @@
+C:\Users\admin\source\repos\HocLinq\HocLinq\bin\Debug\HocLinq.exe.config
+C:\Users\admin\source\repos\HocLinq\HocLinq\bin\Debug\HocLinq.exe
+C:\Users\admin\source\repos\HocLinq\HocLinq\bin\Debug\HocLinq.pdb
+C:\Users\admin\source\repos\HocLinq\HocLinq\obj\Debug\HocLinq.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\HocLinq\HocLinq\obj\Debug\HocLinq.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\HocLinq\HocLinq\obj\Debug\HocLinq.exe
+C:\Users\admin\source\repos\HocLinq\HocLinq\obj\Debug\HocLinq.pdb

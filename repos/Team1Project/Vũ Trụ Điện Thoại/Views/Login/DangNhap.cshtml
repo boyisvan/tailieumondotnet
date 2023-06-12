@@ -1,0 +1,48 @@
+﻿@model Vũ_Trụ_Điện_Thoại.Models.TaiKhoan
+@{
+    ViewData["Title"] = "DangNhap";
+    Layout = "";
+}
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Vũ_Trụ_Điện_Thoại</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Vũ_Trụ_Điện_Thoại.styles.css" asp-append-version="true" />
+</head>
+<div class="row justify-content-md-center mt-5" >
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                Đăng nhập vào vũ trụ điện thoại
+            </div>
+            <div class="card-body">
+                @using (Html.BeginForm("DangNhap", "Login", FormMethod.Post))
+                {
+                    @Html.AntiForgeryToken()
+                    <div class="form-group">
+                        @*@Html.LabelFor(m => m.TenTaiKhoan)*@
+                        @Html.TextBoxFor(m => m.TenTaiKhoan, "", new { @class = "form-control", @placeholder = "Tên người dùng" })
+                        <br/>
+                    </div>
+                    <div class="form-group">
+                        @*@Html.LabelFor(m => m.MatKhau)*@
+                        @Html.PasswordFor(m => m.MatKhau, new { @class = "form-control", @placeholder = "Nhập mật khẩu" })
+                        <br/>
+                    </div>
+                    <div class="form-group justify-content-md-between" style="display:flex;">
+                        <input type="submit" name="submit" class="btn btn-success" value="Đăng nhập" />
+                        <a href="/Login/DangKi" class="btn btn-outline-secondary">Đăng kí ngay</a>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    body{
+        background: url("https://haycafe.vn/wp-content/uploads/2021/12/Hinh-nen-cong-nghe.jpg");
+    }
+</style>

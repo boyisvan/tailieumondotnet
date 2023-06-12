@@ -1,0 +1,61 @@
+﻿@model Vũ_Trụ_Điện_Thoại.Models.NhanVien
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+
+
+<div class="form-horizontal form-control" style="width:500px;height:590px;margin:0 auto"
+    <div class="col-md-4">
+        <h4 class="text-center">Thêm mới nhân viên</h4>
+<hr />
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="MaNhanVien" class="control-label"></label>
+                <input asp-for="MaNhanVien" class="form-control" />
+                <span asp-validation-for="MaNhanVien" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MaNguoiDung" class="control-label"></label>
+                <select asp-for="MaNguoiDung" class ="form-control" asp-items="ViewBag.MaNguoiDung"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="HoTen" class="control-label"></label>
+                <input asp-for="HoTen" class="form-control" />
+                <span asp-validation-for="HoTen" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DiaChi" class="control-label"></label>
+                <input asp-for="DiaChi" class="form-control" />
+                <span asp-validation-for="DiaChi" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SoDienThoai" class="control-label"></label>
+                <input asp-for="SoDienThoai" class="form-control" />
+                <span asp-validation-for="SoDienThoai" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MaChucVu" class="control-label"></label>
+                <select asp-for="MaChucVu" class ="form-control" asp-items="ViewBag.MaChucVu"></select>
+                <br />
+                
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-8" style="display:flex;justify-content:space-between">
+                    <input type="submit" value="Lưu lại" class="btn btn-success" />
+                    <a href="/NhanVien/Index" class="btn btn-outline-primary">Quay lại</a>
+                </div>
+            </div>
+        </form>
+        <br />
+    </div>
+</div>
+
+

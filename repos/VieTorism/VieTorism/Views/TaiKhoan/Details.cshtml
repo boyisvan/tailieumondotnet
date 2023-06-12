@@ -1,0 +1,41 @@
+﻿@model VieTorism.Models.Taikhoan
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layoutadmin.cshtml";
+}
+
+<div>
+    <h4>Chi tiết tài khoản </h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Tên đăng nhập
+        </dt>
+        <dd class="col-sm-10">
+            : @Html.DisplayFor(model => model.Tendangnhap)
+        </dd>
+        <dt class = "col-sm-2">
+          Mật khẩu
+        </dt>
+        <dd class = "col-sm-10">
+            : @Html.DisplayFor(model => model.Matkhau)
+        </dd>
+        <dt class = "col-sm-2">
+            Trạng thái
+        </dt>
+        <dd class = "col-sm-10">
+            : @Html.DisplayFor(model => model.Trangthai)
+        </dd>
+        <dt class = "col-sm-2">
+           Phân quyền
+        </dt>
+        <dd class = "col-sm-10">
+            : @Html.DisplayFor(model => model.Role)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Tendangnhap">Edit</a> |
+    <a asp-action="Index">Quay lại</a>
+</div>

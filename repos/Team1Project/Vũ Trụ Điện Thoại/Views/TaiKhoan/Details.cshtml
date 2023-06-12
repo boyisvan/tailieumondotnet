@@ -1,0 +1,35 @@
+﻿@model Vũ_Trụ_Điện_Thoại.Models.TaiKhoan
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+<div>
+    <h4>Chi tiết tài khoản</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.TenTaiKhoan)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.TenTaiKhoan)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MatKhau)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MatKhau)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.LoaiTaiKhoan)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.LoaiTaiKhoan)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.MaNguoiDung" class="btn btn-warning">Sửa</a>
+    <a asp-action="Index" class="btn btn-info">Back to List</a>
+</div>

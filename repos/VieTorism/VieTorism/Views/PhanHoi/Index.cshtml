@@ -1,0 +1,52 @@
+﻿@model IEnumerable<VieTorism.Models.Phanhoi>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layoutadmin.cshtml";
+}
+
+<p>
+    <a href="/Phanhoi/Create" class="btn btn-success">Thêm mới</a>
+</p>
+<table class="table table-bordered table-hover text-center " style="box-shadow:5px 10px 25px #f8fff0">
+    <thead>
+        <tr>
+            <th>
+                Stt
+            </th>
+            <th>
+                Tên người phản hổi
+            </th>
+            <th>
+                Nội dung
+            </th>
+            <th>
+                Trạng thái
+            </th>
+            <th>Thao tác</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tennguoiphanhoi)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Noidung)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Trangthai)
+            </td>
+            <td>
+                    <a href="/PhanHoi/Edit?Masinhvien=@item.Id" class="btn btn-primary">Sửa</a>
+                    <a href="/PhanHoi/Details?Masinhvien=@item.Id" class="btn btn-warning">Chi tiết</a>
+                    <a href="/PhanHoi/Delete?Masinhvien=@item.Id" class="btn btn-danger">Xóa</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

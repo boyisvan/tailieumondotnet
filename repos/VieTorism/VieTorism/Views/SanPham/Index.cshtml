@@ -1,0 +1,65 @@
+﻿@model IEnumerable<VieTorism.Models.Sanpham>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layoutadmin.cshtml";
+}
+
+<nav>
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+        <li class="breadcrumb-item"><a href="#">Sản phẩm</a></li>
+        <li class="breadcrumb-item active">Chi tiết</li>
+    </ol>
+</nav>
+<p>
+    <a href="/SanPham/Create" class="btn btn-success">Thêm mới</a>
+</p>
+<table class="table table-bordered table-hover text-center " style="box-shadow:5px 10px 25px #f8fff0">
+    <thead>
+        <tr>
+            <th>
+                id 
+            </th>
+            <th>
+                Ảnh 
+            </th>
+            <th>
+                Mô tả
+            </th>
+            <th>
+                Đánh giá
+            </th>
+            <th>
+                Mã danh mục
+            </th>
+            @*<th>Thao tác</th>*@
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                <img src="~/Images/@item.Anh" style="max-width:75px;max-height:75px"/>
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Mota)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Danhgia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Madanhmuc)
+            </td>
+            @*<td>
+                    <a href="/SanPham/Edit?Id=@item.Tensanpham" class="btn btn-primary">Sửa</a>
+                    <a href="/SanPham/Details?Id=@item.Tensanpham" class="btn btn-warning">Chi tiết</a>
+                    <a href="/SanPham/Delete?Id=@item.Tensanpham" class="btn btn-danger">Xóa</a>
+            </td>*@
+        </tr>
+}
+    </tbody>
+</table>

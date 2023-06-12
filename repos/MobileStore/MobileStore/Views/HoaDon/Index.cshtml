@@ -1,0 +1,64 @@
+﻿@model IEnumerable<MobileStore.Models.HoaDon>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2 class="text-center">Danh sách hóa đơn</h2>
+
+<p>
+    <a href="/HoaDon/Create" class="btn btn-success">Thêm mới</a>
+</p>
+<table class="table table-bordered table-hover text-center " style="box-shadow:5px 10px 25px #f8fff0">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.SoLuong)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TongTienThanhToan)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ngay)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.KhachHang.MaNguoiDung)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NhanVien.MaNguoiDung)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SanPham.TenSanPham)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.SoLuong)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TongTienThanhToan)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ngay)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.KhachHang.MaNguoiDung)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NhanVien.MaNguoiDung)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SanPham.TenSanPham)
+            </td>
+            <td>
+                <a href="/HoaDon/Edit?MaHoaDon=@item.MaHoaDon" class="btn btn-primary">Sửa</a>
+                <a href="/HoaDon/Details?MaHoaDon=@item.MaHoaDon" class="btn btn-warning">Chi tiết</a>
+                <a href="/HoaDon/Delete?MaHoaDon=@item.MaHoaDon" class="btn btn-danger">Xóa</a>
+            </td>
+        </tr>
+    }
+
+</table>

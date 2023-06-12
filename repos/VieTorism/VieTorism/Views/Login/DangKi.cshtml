@@ -1,0 +1,66 @@
+﻿@model VieTorism.Models.Taikhoan
+
+@{
+    ViewData["Title"] = "DangKi";
+    Layout = "";
+}
+<head>
+    <link href="~/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="~/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="~/assets/vendor/quill/quill.snow.css" rel="stylesheet">
+    <link href="~/assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+    <link href="~/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="~/assets/vendor/simple-datatables/style.css" rel="stylesheet">
+    <!-- Template Main CSS File -->
+    <link href="~/assets/css/style.css" rel="stylesheet">
+</head>
+<div class="card" style="width:450px;height:305px;border-radius:15px;position:absolute;">
+        <div class="card-header" >
+                Đăng kí tài khoản mới
+         </div>
+         <div class="card-body" style="padding:15px">
+            <form asp-action="DangKi">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label class="control-label">Tên đăng nhập</label>
+                    <input asp-for="Tendangnhap" class="form-control" />
+                    <span asp-validation-for="Tendangnhap" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Mật khẩu</label>
+                    <input asp-for="Matkhau" class="form-control" />
+                    <span asp-validation-for="Matkhau" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input asp-for="Role" class="form-control" value="2" type="hidden"/>
+                </div>
+                <div class="form-group">
+                    <input asp-for="Trangthai" class="form-control" value="1" type="hidden" />
+                </div>
+                </br>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-11" style="display:flex;justify-content:space-between">
+                        <input type="submit" value="Đăng kí " class="btn btn-success" />
+                        <a href="/Login/DangNhap/" class="btn btn-outline-primary">Quay lại</a>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+
+
+<style>
+    body {
+        background: url("https://img4.thuthuatphanmem.vn/uploads/2019/12/16/anh-nen-thien-nhien-4k-dep_024350230.jpg");
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+        position:absolute;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+</style>

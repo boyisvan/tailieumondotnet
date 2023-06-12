@@ -1,0 +1,45 @@
+﻿@model IEnumerable<MobileStore.Models.DanhMuc>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2 class="text-center">Danh sách các danh mục</h2>
+
+<p>
+    <a href="/DanhMuc/Create/" class="btn btn-success">Thêm mới</a>
+</p>
+<table class="table table-bordered table-hover text-center " style="box-shadow:5px 10px 25px #f8fff0">
+    <tr class="alert-info">
+        <th>
+            @Html.DisplayNameFor(model => model.MaDanhMuc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TenDanhMuc)
+        </th>
+        <th>Thao tác</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaDanhMuc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenDanhMuc)
+            </td>
+            <td>
+                <a href="/DanhMuc/Edit?MaDanhMuc=@item.MaDanhMuc" class="btn btn-primary">Sửa</a>
+                <a href="/DanhMuc/Details?MaDanhMuc=@item.MaDanhMuc" class="btn btn-info">Chi tiết</a>
+                <a href="/DanhMuc/Delete?MaDanhMuc=@item.MaDanhMuc" class="btn btn-danger">Xóa</a>
+            </td>
+        </tr>
+    }
+
+</table>
+<style>
+    th {
+        text-align: center;
+    }
+</style>

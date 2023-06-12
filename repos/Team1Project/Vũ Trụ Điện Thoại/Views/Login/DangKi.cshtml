@@ -1,0 +1,49 @@
+﻿@model Vũ_Trụ_Điện_Thoại.Models.TaiKhoan
+
+@{
+    ViewData["Title"] = "DangKi";
+}
+
+
+<div class="row form-control" style="width:400px;margin:0 auto">
+    <h4 class="text-center">Đăng kí tài khoản mới</h4>
+    <hr />
+    <div class="col-md-12">
+        <form asp-action="DangKi">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="MaNguoiDung" class="control-label"></label>
+                <input asp-for="MaNguoiDung" class="form-control" />
+                <span asp-validation-for="MaNguoiDung" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TenTaiKhoan" class="control-label"></label>
+                <input asp-for="TenTaiKhoan" class="form-control" />
+                <span asp-validation-for="TenTaiKhoan" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MatKhau" class="control-label"></label>
+                <input asp-for="MatKhau" type="password" class="form-control" />
+                <span asp-validation-for="MatKhau" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <br/>
+                <label asp-for="LoaiTaiKhoan" class="control-label"></label>
+                <input asp-for="LoaiTaiKhoan" type="hidden" class="form-control" />
+                <span asp-validation-for="LoaiTaiKhoan" class="text-danger"> : liên hệ admin để cấp quyền</span>
+                <br /> <br />  
+            </div>
+            <div class="form-group" style="display:flex;justify-content:space-around">
+                <input type="submit" value="Thêm mới" class="btn btn-primary" />
+                <a href="/Login/DangNhap" class="btn btn-outline-dark">Quay lại</a>
+            </div>
+            <br />
+        </form>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,51 @@
+﻿@model VieTorism.Models.Taikhoan
+
+@{
+    ViewData["Title"] = "DangNhap";
+    Layout = "";
+}
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] VietNamTourism</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/VietNamTourism.styles.css" asp-append-version="true" />
+</head>
+<div class="row justify-content-md-center mt-5">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                Đăng nhập vào Việt Nam Tourism
+            </div>
+            <div class="card-body">
+                @using (Html.BeginForm("DangNhap", "Login", FormMethod.Post))
+                {
+                    @Html.AntiForgeryToken()
+                    <div class="form-group">
+                        @Html.TextBoxFor(m => m.Tendangnhap, "", new { @class = "form-control", @placeholder = "Tên người dùng" })
+                        <br />
+                    </div>
+                    <div class="form-group">
+                        @Html.PasswordFor(m => m.Matkhau, new { @class = "form-control", @placeholder = "Nhập mật khẩu" })
+                        <br />
+                    </div>
+                    <div class="form-group justify-content-md-between" style="display:flex;">
+                        <input type="submit" name="submit" class="btn btn-success" value="Đăng nhập" />
+                        <a href="/Login/DangKi" class="btn btn-outline-secondary">Đăng kí ngay</a>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<style>
+    body {
+        background: url("https://i.pinimg.com/originals/5f/cc/80/5fcc80e2a77a4ce69467ea7f08e49fea.png");
+        background-size:cover;
+        height:100vh;
+        width:100%;
+    }
+</style>

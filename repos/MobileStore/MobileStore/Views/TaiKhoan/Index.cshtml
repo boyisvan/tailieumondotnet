@@ -1,0 +1,57 @@
+﻿@model IEnumerable<MobileStore.Models.TaiKhoan>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2 class="text-center">Danh sách tài khoản</h2>
+
+<p>
+    <a href="/TaiKhoan/Create" class="btn btn-success">Thêm mới</a>
+</p>
+<table class="table table-bordered table-hover text-center " style="box-shadow:5px 10px 25px #f8fff0">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.MaNguoiDung)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TenTaiKhoan)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MatKhau)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LoaiTaiKhoan)
+        </th>
+        <th>Thao tác</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaNguoiDung)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenTaiKhoan)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MatKhau)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LoaiTaiKhoan)
+            </td>
+            <td>
+                <a href="/TaiKhoan/Edit?MaNguoiDung=@item.MaNguoiDung" class="btn btn-primary">Sửa</a>
+                <a href="/TaiKhoan/Details?MaNguoiDung=@item.MaNguoiDung" class="btn btn-warning">Chi tiết</a>
+                <a href="/TaiKhoan/Delete?MaNguoiDung=@item.MaNguoiDung" class="btn btn-danger">Xóa</a>
+            </td>
+        </tr>
+    }
+
+</table>
+<style>
+    th {
+        text-align: center;
+    }
+</style>

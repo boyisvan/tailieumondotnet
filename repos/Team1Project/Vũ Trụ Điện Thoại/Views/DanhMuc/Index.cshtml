@@ -1,0 +1,41 @@
+﻿@model IEnumerable<Vũ_Trụ_Điện_Thoại.Models.DanhMuc>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+
+<p>
+    <a asp-action="Create" class="btn btn-success">Thêm mới</a>
+</p>
+<table class="table table-bordered table-hover text-center " style="box-shadow:5px 10px 25px #f8fff0">
+    <thead>
+        <tr class="alert alert-primary">
+            <th>
+                Mã danh mục
+            </th>
+            <th>
+                Tên danh mục
+            </th>
+            <th>Thao tác</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaDanhMuc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TenDanhMuc)
+            </td>
+            <td>
+                    <a href="/DanhMuc/Edit?MaDanhMuc=@item.MaDanhMuc" class="btn btn-primary">Sửa</a>
+                    <a href="/DanhMuc/Details?MaDanhMuc=@item.MaDanhMuc" class="btn btn-warning">Chi tiết</a>
+                    <a href="/DanhMuc/Delete?MaDanhMuc=@item.MaDanhMuc" class="btn btn-danger">Xóa</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
